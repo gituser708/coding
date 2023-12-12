@@ -1,0 +1,120 @@
+h5 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(169, 16, 121);
+}
+  
+    /* Style for form container */
+.myForm {
+    width: 30%; 
+    margin: 0 auto; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  /* Style for form labels */
+  .myForm label {
+    display: block; /* Display labels in block */
+    margin-bottom: 4px; /* Space between labels and inputs */
+    color: rebeccapurple; /* Label text color */
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  /* Style for input fields */
+  .myForm input[type="text"],
+  .myForm input[type="email"],
+  .myForm textarea,
+  .myForm input[type="password"],
+  .myForm input[type="checkbox"] {
+    width: 70%; /* Input field width */
+    padding: 8px; /* Padding inside the input field */
+    margin-bottom: 5px; /* Space between input fields */
+    border: 2px solid black; /* Add border */
+    border-radius: 20px; /* Rounded border corners */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effect */
+  }
+  
+  
+  .myForm input[type="text"]:focus,
+  .myForm input[type="email"]:focus,
+  .myForm textarea:focus,
+  .myForm input[type="password"]:focus {
+    border-color: #2ecc71; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /* Add shadow on focus */
+  }
+  
+  h6 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: darkblue;
+  }
+  h7 {
+    font-size: 20px;
+    
+  }
+  .loginbutton {
+    padding : 10px 30px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
+  .loginbutton:hover {
+    background-color: rgb(52, 51, 51);
+    color: turquoise;
+  }
+  .logoutbutton {
+    padding : 10px 30px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
+  .logoutbutton:hover {
+    background-color: rgb(52, 51, 51);
+    color: turquoise;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  max-width: 50%;
+  height: auto;
+}
+
+
+.content-section {
+  flex: 1;
+  padding: 50px;
+}
+
+
+.content-section p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+   
+  

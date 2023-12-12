@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodhut</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/account.css">
+</head>
+<body>
+    <header> 
+
+        <div class="banner">
+            <div class="heading">
+              <b>Food<b1>Hut</b1>🍴</b> 
+            </br>
+          </div>
+          </div>
+
+        <h1>Your Food Destination!😋...</h1>
+    <div id="allButtons">
+  <a href="./index.html" class="button">Home</a>
+ <a href="./account.html" class="button">Account</a>
+ <a href="./login.html" class="loginbutton">Login🗝️</a>
+ <a href="./logout.html" class="logoutbutton">Logout🔒</a>
+ <a href="./about.html" class="button">About Us</a>
+         </div>
+
+       
+
+    </header>  
+    <h5>Create Your Account</h5>
+
+    <form class="myForm" id="myForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="message">Your Feedback👍👎</label>
+        <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <input type="checkbox" id="tc" name="tc" required>
+        <label for="tc">Accept all the terms & conditions</label>
+      </div>
+  
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('myForm');
+  
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault(); // Prevent the default form submission behavior
+  
+          const formData = new FormData(form); // Get form data
+          const url = 'http://localhost:3000/submit-form'; // Assuming backend is running on localhost port 3000
+  
+          // Set the value of 'tc' based on checkbox status
+          const tcCheckbox = document.getElementById('tc');
+          formData.set('tc', tcCheckbox.checked);
+  
+          try {
+            const response = await fetch(url, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json', 
+              },
+              body: JSON.stringify(Object.fromEntries(formData)), 
+            });
+  
+            if (response.ok) {
+              alert('Form submitted successfully!Thank You🙏🙏 Your account is being proocced...👍'); 
+              form.reset(); 
+            } else {
+              throw new Error('Failed to submit form');
+            }
+          } catch (error) {
+            console.error('Error submitting form:', error);
+           
+          }
+        });
+      });
+    </script>
+
+    <footer>Foodhut©️copyright 2023||All right reseverd</footer>
+    
+
+</body>
+</html>
