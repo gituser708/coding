@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## **KnowledgeHut upGrad | JavaScript Starter Template 2.0**
 
 This is the new version of the create-js-app that incorporates the Vite development tool instead of the Parcel bundler as used in v1.0 of this utility. Vite (https://vitejs.dev) brings tremendous performance boost to the development environment.
@@ -18,3 +19,7 @@ A sample application has been made available in the src folder which you can edi
 - **Development** : Run `npm run dev` - This will start the development server and open the app in the default browser. You can then work with the files in the src/ folder and can see instant updates in the browser.
   
 - **Production Build**: Run `npm run build` - This will produce a build edition that you can then deploy on the cloud/host on a static file service such as GitHub pages or surge.sh.  We recommend trying https://surge.sh for deploying static apps. Please note that the build also copies down the mockServiceWorker.js file into the dist folder. You can safely remove this file from the dist folder before deploying your app.
+=======
+# frontend-web
+my frontend project
+>>>>>>> 198525ffa810bea9ddb2c62e8ccce4d366783a1f
