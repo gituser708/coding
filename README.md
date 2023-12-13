@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## **KnowledgeHut upGrad | JavaScript Starter Template 2.0**
 
 This is the new version of the create-js-app that incorporates the Vite development tool instead of the Parcel bundler as used in v1.0 of this utility. Vite (https://vitejs.dev) brings tremendous performance boost to the development environment.
@@ -23,3 +24,7 @@ A sample application has been made available in the src folder which you can edi
 # frontend-web
 my frontend project
 >>>>>>> 198525ffa810bea9ddb2c62e8ccce4d366783a1f
+=======
+# my-frontend
+my frontend project
+>>>>>>> 65b0ecf2c5da0dc52203f6358f03ce1574f55232
