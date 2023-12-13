@@ -1,0 +1,3 @@
+[submodule "my-frontend"]
+	path = my-frontend
+	url = https://github.com/somugituser/my-frontend.git
